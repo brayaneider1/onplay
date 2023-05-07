@@ -1,0 +1,65 @@
+@media screen and (min-width: $medium) {
+  .login {
+    &_content {
+      padding: 100px;
+      background-color: yellow;
+    }
+  }
+}
+
+@media screen and (max-width: $s-medium) {
+
+.pivoted{
+  .item{
+    margin-left: 0px;
+  }
+}
+
+  .request-modal {
+    width: 70vw !important;
+  }
+  .local-data {
+    flex-direction: column;
+  }
+
+  .shop {
+    padding: 15px 10px !important;
+    .item{
+      margin-left: 0 !important;
+    }
+  }
+  .ant-tabs {
+    height: auto !important;
+    overflow: auto;
+  }
+  .sells {
+    padding: 15px 10px !important;
+    .item {
+      text-align: start !important;
+    }
+    .actions {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+
+      .succes {
+        margin: 10px 5px;
+        svg {
+          width: 32px !important;
+          height: 32px !important;
+        }
+      }
+    }
+  }
+
+  .products {
+    &_item {
+      width: auto;
+      flex-direction: column;
+      align-items: flex-start !important;
+      .actions {
+        padding: 0 !important;
+        justify-content: space-between !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.home {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 15px 40px;
+  &_content {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .item {
+      width: 75%;
+      border: 2px solid #f0f0f07b;
+      border-radius: 40px;
+      height: auto;
+      padding: 15px;
+      display: flex;
+      margin: 10px 0;
+      outline: none;
+
+
+      &:hover {
+        width: 85%;
+        background-color: #012240;
+        p {
+          color: white;
+        }
+        span {
+          display: none;
+        }
+        label{
+          display: flex !important;
+          justify-self: flex-start;
+        }
+      }
+      &_circle {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label {
+          display: none !important;
+          background: #4070f4;
+          border-radius: 48px;
+          color: #000000;
+          transform: rotate(90deg);
+          padding: 15px;
+          width: 124px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 24px;
+        }
+        span {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+
+      &_content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .scene {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #012240;
+          margin: 5px 0;
+        }
+        .sport {
+          font-size: 16px;
+          line-height: 150%;
+          color: #84809f;
+          margin: 5px 0;
+        }
+        .state {
+          font-size: 16px;
+          line-height: 150%;
+          color: #012240;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}

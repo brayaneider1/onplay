@@ -1,0 +1,113 @@
+.header {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+
+  &_title {
+    width: 90%;
+    font-size: 25px;
+    span{
+      color: $light-purple;
+      font-size: 2vw;
+      b{
+        font-weight: bold;
+      }
+    }
+  }
+  &_options {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    i {
+      color: $light-purple !important;
+    }
+    .input-component_content {
+      margin-top: 0px !important;
+    }
+    input {
+      margin-top: 0px !important;
+      color: $light-purple !important;
+      font-weight: 500 !important;
+      &::placeholder {
+        color: $light-purple !important;
+        font-weight: 500 !important;
+      }
+    }
+    .notification {
+      background: #f3f6ff;
+      border-radius: 20px 5px;
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      color: $light-purple;
+      position: relative;
+      width: 36px;
+      height: 36px;
+      svg {
+        width: 34px;
+        height: 34px;
+      }
+      .dot {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 13px;
+        height: 13px;
+        color: white;
+        border-radius: 50%;
+        background: #5840bb;
+      }
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      flex-flow: row;
+      border-radius: 20px 5px;
+    }
+  }
+  .ant-layout-header {
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: $x-large) {
+  .header {
+    &_title {
+      width: 70%;
+    }
+    &_options {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .header {
+
+    &_options {
+      width: 30%;
+
+      i {
+        color: $light-purple !important;
+      }
+      .input-component_content {
+        margin-top: 0px !important;
+      }
+      input {
+        width: 100px;
+      }
+    }
+    &_title {
+      width: 70%;
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}

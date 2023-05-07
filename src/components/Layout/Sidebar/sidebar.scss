@@ -1,0 +1,127 @@
+.private-layout {
+  border: 15px solid $primary-color;
+  background: $primary-color;
+
+  .sidebar {
+    display: block;
+    position: relative;
+    color: white;
+    padding-left: 0;
+
+    &_logo {
+      width: 50%;
+      margin: 20px 25%;
+    }
+    .ant-menu-dark .ant-menu-item-selected .anticon,
+    a {
+      color: $light-purple;
+      outline: 0;
+      &:focus {
+        color: $light-purple;
+        border: 1px solid transparent;
+      }
+      &:active {
+        color: $light-purple;
+        border: 1px solid transparent;
+      }
+      &:hover {
+        color: $light-purple;
+        border: 1px solid transparent;
+      }
+    }
+
+    &_left {
+      font-size: 25px;
+      top: 10px;
+      position: absolute;
+      right: 20px;
+    }
+
+    .ml-menu {
+      margin-left: 14px;
+      color: white;
+      font-weight: 500;
+    }
+    height: 100%;
+
+    .ant-menu {
+      background: rgba(255, 255, 255, 0);
+      color: $light-purple;
+      &-item {
+        margin: 0;
+        padding: 0 0;
+        background: $primary-color;
+      }
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      background: transparent;
+    }
+
+    .ant-layout-has-sider {
+      height: 100% !important;
+      background: #242357;
+    }
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+      .ant-menu-item-selected {
+      background-color: transparent;
+      border-radius: 10px 0 0 10px;
+      color: $light-purple;
+      a {
+        color: $light-purple;
+      }
+    }
+
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+      .ant-menu-item-selected {
+      background-color: white;
+      border-radius: 10px 0 0 10px;
+      color: $light-purple;
+    }
+    .ant-menu-dark.ant-menu-inline .ant-menu-item,
+    .ant-menu-dark.ant-menu-inline .ant-menu-submenu-title {
+      color: white;
+    }
+    .ant-menu.ant-menu-dark,
+    .ant-menu-dark .ant-menu-sub,
+    .ant-menu.ant-menu-dark .ant-menu-sub {
+      color: $light-purple;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+@media screen and (max-width: $s-medium) {
+  .private-layout {
+    border: transparent;
+    background: white;
+
+    .sidebar {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      opacity: 0.95;
+      transition: all 5s;
+      .close {
+        display: block;
+      }
+    }
+    .menu {
+      display: flex;
+    }
+  }
+}
+
+.menu {
+  width: 32px;
+  height: 32px;
+  z-index: 1000;
+  border-radius: 50%;
+  background-color: #0d64ba;
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  display: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}

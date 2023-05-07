@@ -1,0 +1,76 @@
+.profile {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 15px 40px;
+  form {
+    height: 100%;
+
+    h2 {
+      color: #42427d;
+      font-size: 2vw;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .ant-upload {
+      margin: 20px auto;
+      &-picture-card-wrapper {
+        display: flex;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 163.42%;
+        color: #858585;
+      }
+
+      &-select-picture-card {
+        border: 1px solid #012240;
+        width: 200px;
+        border-radius: 10px;
+        svg {
+          width: 46px;
+          height: 46px;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      color: #858585;
+    }
+
+    input,
+    select {
+      height: 40px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit {
+      background: #2f80ed;
+      border-radius: 100px;
+      width: 134px;
+      padding: 5px 10px;
+      font-size: 14px;
+      border: 1px solid transparent;
+
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: $s-medium) {
+    form {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+}

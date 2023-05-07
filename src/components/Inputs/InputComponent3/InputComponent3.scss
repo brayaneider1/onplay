@@ -1,0 +1,47 @@
+.input-component3 {
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #322b5f;
+    margin-top: 5px;
+  }
+  input,
+  select {
+    margin: 1px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: "Roboto";
+    font-style: normal;
+    color: #322b5f8e;
+    background: #ffffff;
+    border: 1px solid #adaabf;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(50, 43, 95, 0.08);
+    border-radius: 20px;
+  }
+
+  .wrap-time{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border:1px solid #322b5f;
+    border-radius: 20px;
+  }
+
+  input[type="time"] {
+    margin: 1px 0;
+    width: 20%;
+    padding: 7px;
+    font-size: "Roboto";
+    font-style: normal;
+    color: #322b5f8e;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(50, 43, 95, 0.08);
+    border-radius: 20px;
+  }
+}

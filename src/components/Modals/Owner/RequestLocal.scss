@@ -1,0 +1,70 @@
+.request-local {
+    position: relative;
+    padding-bottom: 60px;
+    width: 60vw;
+  &_grid {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, 26em);
+    grid-gap: 20px;
+  
+  input{
+    width: 17vw;
+    color: black !important;
+  }
+  }
+  input[type='file'] {
+    color: rgba(0, 0, 0, 0); 
+  }
+
+  input[type="file"] {
+    cursor: pointer !important;
+  }
+  input[type="file"]::-webkit-file-upload-button {
+    width: 100%;
+    padding: 10px;
+    font-size: "Roboto";
+    font-style: normal;
+    background: #ffffff;
+    border: 1px solid #adaabf;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  input[type="file"]::-ms-browse {
+  
+    width: 100%;
+    padding: 10px;
+    font-size: "Roboto";
+    font-style: normal;
+    background: #ffffff;
+    border: 1px solid #adaabf;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+
+  .submit {
+    background: #4070f4;
+    box-shadow: 6px 6px 16px #becde2, -6px -6px 16px #ffffff;
+    border-radius: 4px;
+    color: white;
+    bottom: 0px;
+    padding: 10px 30px;
+    position: absolute;
+    right: 10px;
+    align-self: center;
+    border: transparent;
+  }
+
+  
+  @media screen and (max-width: $s-medium) {
+    &__content{
+      flex-direction: column;
+
+      .item{
+        width: 100%;
+      }
+    }
+  }
+}

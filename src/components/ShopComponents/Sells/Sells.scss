@@ -1,0 +1,82 @@
+.sells {
+  position: relative;
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+
+  
+
+  &_add {
+    background: #f3f3f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 36px rgba(0, 0, 0, 0.18);
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    align-self: flex-end;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    color: #012240;
+  }
+  thead {
+    border-bottom: 1px solid $primary-color;
+  }
+  th {
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    color: #243d6f;
+  }
+
+  .item {
+    padding: 15px 3px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #858585;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .plus {
+      background: #3d41d7;
+      border-radius: 8px;
+      color: white;
+      padding: 2%;
+      display: flex;
+      align-items: center;
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .trash {
+      display: flex;
+      align-items: center;
+      background: #f61111;
+      border-radius: 8px;
+      color: white;
+      padding: 2%;
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .succes {
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 2%;
+      svg {
+        color: #04aa6d;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}

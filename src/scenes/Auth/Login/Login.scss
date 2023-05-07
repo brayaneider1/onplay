@@ -1,0 +1,116 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    img {
+      width: 30%;
+      margin-bottom: 50px;
+    }
+    span {
+      font-size: 10vw;
+    }
+  }
+  &_content {
+    background-color: white;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 0 15vw 0 10vw;
+
+    img{
+      width: 150px;
+      height: 130px;
+      margin: 0 auto 50px auto;
+      display: none;
+    }
+    span{
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: white;
+    }
+    input {
+      margin-bottom: 5%;
+    }
+
+    p {
+      align-self: center;
+      text-align: center;
+      margin-top: 10% !important;
+      color: white;
+      margin-top: 5px;
+      a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .submit {
+      background: #4070f4;
+      border-radius: 4px;
+      color: white;
+      box-shadow: 0px 0px 15px rgba(64, 112, 244, 0.5);
+      padding: 5px 20px;
+      margin: 30px 25% 0 25%;
+      border: 1px solid transparent;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: $s-medium) {
+  .login {
+    flex-direction: column;
+
+    &_content {
+      width: 100%;
+      background-size: 0%;
+      background-color: $primary-color;
+      padding: 10%;
+      img{
+        display: block;
+      }
+
+     
+    }
+    &_logo {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+.input-component {
+    p {
+        color: #322b5f;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    &_content{
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+        background: #f3f6ff;
+        border-radius: 20px 5px;
+        border: 0px;
+        padding:  10px;
+        display: flex;
+        justify-content: space-between;
+        input,
+        select {
+            width: auto;
+            height: auto;
+            background: transparent;
+            border: 0px;
+            margin: 0px;
+            font-size: "Roboto";
+            font-style: normal;
+            color: #322b5f8e;
+        }
+        
+    }
+}

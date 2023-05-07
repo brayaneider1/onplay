@@ -1,0 +1,29 @@
+//Importando estilos de escenas
+
+@import './../../scenes/Auth/Login/Login.scss';
+@import './../../scenes/Auth/Register/Register.scss';
+@import './../../scenes/Request/Request.scss';
+@import './../../scenes/Locals/Local.scss';
+@import './../../scenes/Scenarios/Scenarios.scss';
+@import './../../scenes/Profile/Profile.scss';
+@import './../../scenes/Store/Store.scss';
+@import './../../scenes/Shop/Shop.scss';
+@import './../../scenes/Home/Home.scss';
+@import './../../scenes/Charts/Charts.scss';
+@import './../../scenes/Bookings/Bookings.scss';
+@import './../../scenes/RequestAdmin/RequestAdmin.scss';
+
+//Importando estilos de cmponentes
+
+@import './../../components/Inputs/InputComponent/InputComponent.scss';
+@import './../../components/Inputs/InputComponent2/InputComponent2.scss';
+@import './../../components/Inputs/InputComponent3/InputComponent3.scss';
+@import './../../components/Layout/Sidebar/sidebar.scss';
+@import './../../components/Layout/Header/Header.scss';
+@import './../../components/Modals/Owner/RequestLocal.scss';
+@import './../../components/Modals/Owner/Bookings.scss';
+@import './../../components/ShopComponents/Products/Products.scss';
+@import './../../components/ShopComponents/Sells/Sells.scss';
+@import './../../components/RequestAdminComponents/Recent/Recent.scss';
+@import './../../components/RequestAdminComponents/Archived/Archived.scss';
+@import './../../components/Loading/Loading.scss';

@@ -1,0 +1,33 @@
+.charts-company {
+  padding: 20px;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, 30em);
+  grid-gap: 20px;
+  justify-content: center;
+
+  .item {
+    label{
+      color: $primary-color;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    width: 30vw;
+    height: 250px;
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        308.48deg,
+        rgba(255, 255, 255, 0.53) 2.36%,
+        rgba(255, 255, 255, 0) 61.95%
+      ),
+      #fafaff;
+    box-shadow: 2px 2px 4px rgba(114, 142, 171, 0.1), -6px -6px 20px #ffffff,
+      4px 4px 20px rgba(111, 140, 176, 0.41);
+    border-radius: 14px;
+  }
+}
